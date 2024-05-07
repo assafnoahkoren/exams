@@ -1,6 +1,6 @@
 import './App.css'
-import { ExampleComponent } from 'shared/components/ExampleComponent'
 import { useExampleHook } from 'shared/hooks/ExampleHook'
+import { ExampleComponent } from "shared/components/ExampleComponent.tsx";
 
 function App() {
 

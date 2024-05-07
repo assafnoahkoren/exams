@@ -1,0 +1,14 @@
+{
+  "exclude": [
+    "projects/**/tests/**",
+    "projects/**/dist/**"
+  ],
+  "references": [
+    {
+      "path": "./projects/shared"
+    },
+    {
+      "path": "./projects/mobile-client"
+    }
+  ]
+}
