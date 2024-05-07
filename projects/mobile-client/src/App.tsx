@@ -1,15 +1,17 @@
+
+import { useExampleHook } from '@shared/hooks/ExampleHook';
+import { ExampleComponent } from '@shared/components/ExampleComponent';
 import './App.css'
-import { useExampleHook } from 'shared/hooks/ExampleHook'
-import { ExampleComponent } from "shared/components/ExampleComponent.tsx";
+import { FC } from 'react';
 
-function App() {
 
-  useExampleHook()
+const App: FC = () => {
+  useExampleHook();
   return (
-    <>
+    <div>
       <ExampleComponent />
-    </>
+    </div>
   )
 }
 
-export default App
+  export default App

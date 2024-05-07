@@ -12,7 +12,6 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "react-jsx",
 
     /* Linting */
@@ -21,13 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    "paths": {
-      "@shared/*": ["../shared/*"]
-    }
-
   },
-  "references": [
-    { "path": "./tsconfig.node.json" },
-    { "path": "../shared"}
-  ]
+  "include": ["**/*"],
+
 }
