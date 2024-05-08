@@ -1,8 +1,9 @@
 
-import { useExampleHook } from '@shared/hooks/ExampleHook';
-import { ExampleComponent } from '@shared/components/ExampleComponent';
+import { useExampleHook } from '../../shared/hooks/ExampleHook';
+import { ExampleComponent } from '../../shared/components/ExampleComponent';
 import './App.css'
 import { FC } from 'react';
+
 
 
 const App: FC = () => {
@@ -14,4 +15,4 @@ const App: FC = () => {
   )
 }
 
-  export default App
+export default App

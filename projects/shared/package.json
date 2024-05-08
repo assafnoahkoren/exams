@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@mobx-devtools/tools": "^0.0.4",
     "mobx": "^6.12.3",
     "mobx-react": "^9.1.1",
     "react": "^18.2.0",

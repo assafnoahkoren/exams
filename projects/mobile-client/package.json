@@ -15,6 +15,11 @@
     "shared": "^1.0.0"
   },
   "dependencies": {
+    "@mobx-devtools/tools": "^0.0.4",
+    "mobx": "^6.12.3",
+    "mobx-react-devtools": "^6.1.1",
+    "mobx-react-lite": "^4.0.7",
+    "mobx-state-tree": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -29,6 +34,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "typescript": "^5.2.2",
-    "vite": "^5.2.0"
+    "vite": "^5.2.0",
+    "vite-aliases": "^0.11.6"
   }
 }
