@@ -1,5 +1,7 @@
 import { injectStores } from "@mobx-devtools/tools";
-import { action, autorun, makeObservable, observable } from "mobx";
+import {action, autorun, makeAutoObservable, makeObservable, observable} from "mobx";
+
+import { makePersistable } from 'mobx-persist-store';
 
 class AuthStore {
   token?: string;
@@ -10,8 +12,6 @@ class AuthStore {
       login: action,
       logout: action,
     });
-
-    autorun(() => console.log(this.token));
   }
 
   login(token: string) {
@@ -25,7 +25,7 @@ class AuthStore {
 
 class TimerStore {
   secondsPassed = 0;
-  name = "Timer";
+  name = "Timer1";
   intervalRef = 0;
 
   constructor() {
@@ -33,6 +33,8 @@ class TimerStore {
       secondsPassed: observable,
       increaseTimer: action,
     });
+    makePersistable(this, { name: 'SampleStore', properties: ['secondsPassed'], storage: window.localStorage });
+
   }
 
   increaseTimer() {
